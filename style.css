@@ -11,7 +11,7 @@ body{
         background-position: top left bottom right;
         background-repeat: no-repeat no-repeat;
 }
-h3,h6{
+h3,h6,h5{
     padding: 0px;
     margin: 0px;
 }
@@ -58,6 +58,9 @@ h3,h6{
 .textsection{
     display: flex;
     margin-right: 10px;
+}
+.textsection h5{
+    color: hsl(300, 43%, 22%);
 }
 
 .box2{
