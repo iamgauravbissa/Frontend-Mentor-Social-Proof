@@ -36,10 +36,12 @@ h3,h6{
 .leftsection .para{
       margin-left: 15px;
 }
-
+.heading h1{
+    font-size: 50px;
+}
 .heading{
     color: hsl(300, 43%,22%);
-    font-weight: 400;
+ 
 }
 .paragraph{
     color: hsl(300, 43%,22%);
