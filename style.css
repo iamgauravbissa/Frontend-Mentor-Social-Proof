@@ -1,137 +1,149 @@
 @import url(https://fonts.google.com/specimen/Spartan);
 
-body{
-    font-family: 'Spartan', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    font-size: 15px;
-  background-image:
-        url(./images/bg-pattern-bottom-desktop.svg),
-        url(./images/bg-pattern-top-desktop.svg);
-        background-position: top left bottom right;
-        background-repeat: no-repeat no-repeat;
-}
-h3,h6,h5{
-    padding: 0px;
-    margin: 0px;
-}
-.topsection, .bottomsection{
-    display: flex;
-    flex-direction: row;
-    margin: 5%;
+body {
+  font-family: 'Spartan', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left, right bottom;
+  position: relative;
 }
 
-.rightsection{
-    width: 35%;
-
+h3, h6, h5 {
+  padding: 0px;
+  margin: 0px;
 }
-.leftsection{
-    width: 50%;
-    display: flex;
+
+.topsection, .bottomsection {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+
+.rightsection {
+  width: 35%;
+}
+
+.leftsection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.leftsection .para {
+  margin-left: 15px;
+}
+
+.heading h1 {
+  font-size: 50px;
+}
+
+.heading {
+  color: hsl(300, 43%, 22%);
+}
+
+.paragraph {
+  color: hsl(300, 43%, 22%);
+}
+
+.boxsection {
+  width: 55%;
+  background-color: hsl(300, 24%, 96%);
+  margin: 5px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.textsection {
+  display: flex;
+  margin-right: 10px;
+}
+
+.textsection h5 {
+  color: hsl(300, 43%, 22%);
+}
+
+.box2 {
+  margin-left: 60px;
+}
+
+.box3 {
+  margin-left: 120px;
+}
+
+.bottomsection {
+  display: flex;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.box {
+  padding: 20px;
+  background-color: hsl(300, 43%, 22%);
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.head img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/* Star image */
+.sta img {
+  padding-right: 4px;
+}
+
+.text {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.text h6 {
+  color: hsl(333, 80%, 67%);
+}
+
+.box .para {
+  color: white;
+}
+
+.boxed2 {
+  margin-top: 40px;
+}
+
+.boxed3 {
+  margin-top: 80px;
+}
+
+/*----------- Mobile Responcive-------------*/
+@media screen and (max-width: 375px) {
+  .topsection, .leftsection, .rightsection, .boxsection, .textsection, .bottomsection, .box {
     flex-direction: column;
     justify-content: center;
-  
-    margin-left: 100px;
-}
-.leftsection .para{
-      margin-left: 15px;
-}
-.heading h1{
-    font-size: 50px;
-}
-.heading{
-    color: hsl(300, 43%,22%);
- 
-}
-.paragraph{
-    color: hsl(300, 43%,22%);
-}
-
-.boxsection{
-    width: 55%;
-    background-color: hsl(300, 24%, 96%);
+    align-items: center;
+    width: 90%;
     margin: 5px;
-    padding: 15px;
-    border-radius: 5px;
+  }
 
-}
-.textsection{
-    display: flex;
-    margin-right: 10px;
-}
-.textsection h5{
-    color: hsl(300, 43%, 22%);
-}
-
-.box2{
-    margin-left: 60px;
-}
-.box3{
-    margin-left: 120px;
-}
-
-.bottomsection{
-    display: flex;
-
-}
-p{
-    padding: 0px;
-    margin: 0px;
-}
-.box{
-    padding: 20px;
-    background-color: hsl(300, 43%, 22%);
+  .box1, .box2, .box3, .boxed2, .boxed3 {
     margin: 10px;
-    border-radius: 20px;
-}
-.head{
-    display: flex;
-    flex-direction: row;
-    color: white;
-}
+  }
 
-.head img{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-.text{
-    margin-left: 10px;
-    padding: 2px;
-
-}
-.text h6{
-    color:hsl(333, 80%, 67%) ;
-
-}
-.box .para{
-        color: white;
-}
-.boxed2{
-    margin-top: 40px;
-}
-.boxed3{
-  
-    margin-top: 80px;
-}
-
-
- /*----------- Mobile Responcive-------------*/
-@media screen and (max-width: 375px){
-
-    .topsection,.leftsection,.rightsection,.boxsection, .textsection , .bottomsection,.box{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        margin: 5px;
-    }
-    .box1,.box2,.box3 , .boxed2,.boxed3{
-        margin: 10px;
-    }
-    .heading , .paragraph {
-        text-align: center;
-    }
-
+  .heading, .paragraph {
+    text-align: center;
+  }
 }
